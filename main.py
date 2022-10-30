@@ -14,5 +14,5 @@ class Print:
         return '<Blog: {}>'.format(self.name)
 
     def print_hi(self) -> str:
-        return "Pino"
+        return "Hi, John"
 

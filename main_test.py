@@ -4,10 +4,10 @@ from unittest.mock import patch, Mock
 
 
 class TestMain(TestCase):
-    @patch('main.Print.print_hi', return_value=9)
+    @patch('main.Print.print_hi', return_value='Hi, Tim')
     def test_print(self, print_hi):
         res = print_hi()
-        self.assertEqual(res, 9)
+        self.assertEqual(res, 'Hi, Tim')
 
     @patch('main.Print')
     def test_posts(self, MockPost):
